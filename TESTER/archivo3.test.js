@@ -43,6 +43,11 @@ describe('esVerdadero(valor)', function () {
         expect(esVerdadero(false)).toBe("Soy falso");
     })
 })
+describe('tablaDelSeis()', function () {
+    it("Deberia devolver la tabla del 6", function(){
+        expect(tablaDelSeis()).toEqual([0, 6, 12, 18, 24, 30, 36, 42, 48, 54, 60]);
+    })
+})
 describe('esPrimo(numero)', function () {
     it("Deberia devolver si el digito ingresado es primo", function(){
         expect(esPrimo(3)).toBe(true);
